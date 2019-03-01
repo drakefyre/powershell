@@ -4,7 +4,7 @@
 .DESCRIPTION
     Queries AD & SCCM, deletes the computer account from AD, and removes the computer object from SCCM 
 .NOTES
-    Author: Matt Hancock - matthew.hancock@dinsmore.com
+   
 .LINK 
    
 .PARAMETER computerName
@@ -21,8 +21,8 @@
 
 param (
 	[parameter(Mandatory=$true, HelpMessage="Enter a computer name")][string]$computerName,
-	[parameter(Mandatory=$false, HelpMessage="Enter SCCM server")][string]$sccmServer='CINSCCM2016.dinslaw.com',
-	[parameter(Mandatory=$false, HelpMessage="Enter SCCM server")][string]$sccmSite='CVG'
+	[parameter(Mandatory=$false, HelpMessage="Enter SCCM server")][string]$sccmServer='SERVER NAME GOES HERE',
+	[parameter(Mandatory=$false, HelpMessage="Enter SCCM server")][string]$sccmSite='SITE NAME GOES HERE'
 )
 
 # find and delete the computer from AD
