@@ -1,4 +1,4 @@
-function Receive-Output
+﻿function Receive-Output
 {
     process { Write-Host $_ -ForegroundColor Yellow }
 }
