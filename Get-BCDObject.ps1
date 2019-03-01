@@ -1,3 +1,7 @@
+<# 
+Clears UEFI Windows Boot Manager list during OSD task sequence.
+Place in the "Setup Operating System" folder, right before Bitlocker is enabled.
+/#>
 Function Get-BCDObject()
 {
 	$bcdEntries = bcdedit /enum firmware
